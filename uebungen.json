@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-05",
+  "version": "2026-11-06",
   "uebungen": [
     {
       "id": "latzug-breit",
@@ -79,8 +79,8 @@
         "core"
       ],
       "geraete": [
-        "klimmzug-assistiert",
-        "gewichtsweste"
+        "gewichtsweste",
+        "klimmzug-assistiert"
       ],
       "wdh": [
         6,

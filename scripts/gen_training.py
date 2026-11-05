@@ -2,7 +2,7 @@ import json
 
 import os
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-V = "2026-11-05"
+V = "2026-11-06"
 
 # ---------------- Geraete (Typen; welches Gym was hat, steht lokal in der App) ----------------
 geraete = [
@@ -37,7 +37,7 @@ uebungen = [
     u("klimmzug-assistiert", "Klimmzug, assistiert", "vertikaler-zug", "ruecken", ["bizeps", "core"], ["klimmzug-assistiert"], [6, 10],
       ["Mehr Gegengewicht = leichter.", "Brust zur Stange, unten ganz strecken."],
       progression="assistenz", danach="klimmzug-weste"),
-    u("klimmzug-weste", "Klimmzug mit Gewichtsweste", "vertikaler-zug", "ruecken", ["bizeps", "core"], ["klimmzug-assistiert", "gewichtsweste"], [6, 10],
+    u("klimmzug-weste", "Klimmzug mit Gewichtsweste", "vertikaler-zug", "ruecken", ["bizeps", "core"], ["gewichtsweste", "klimmzug-assistiert"], [6, 10],
       ["Ohne Gegengewicht, Zusatzgewicht über die Weste.", "Brust zur Stange, unten ganz strecken, nicht schwingen."]),
     # horizontaler Zug
     u("kabelrudern-sitzend", "Rudern am Kabel, sitzend", "horizontaler-zug", "ruecken", ["bizeps", "hintere-schulter"], ["kabelzug"], [8, 12],
