@@ -1,0 +1,9 @@
+{
+  "name": "health-session-katalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "bun scripts/validate.ts",
+    "report": "bun scripts/validate.ts --report"
+  }
+}

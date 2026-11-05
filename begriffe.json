@@ -1,0 +1,144 @@
+{
+  "version": "2026-11-05",
+  "gruppen": [
+    {
+      "id": "saetze",
+      "name": "Sätze & Wiederholungen",
+      "begriffe": [
+        {
+          "id": "wiederholung",
+          "begriff": "Wiederholung (Wdh.)",
+          "erklaerung": "Die Bewegung einmal ganz ausführen, z. B. einmal die Stange runterziehen und wieder hochlassen."
+        },
+        {
+          "id": "satz",
+          "begriff": "Satz",
+          "erklaerung": "Mehrere Wiederholungen am Stück, danach Pause. „3 × 8–12“ heißt: 3 Sätze mit je 8 bis 12 Wiederholungen."
+        },
+        {
+          "id": "wiederholungsbereich",
+          "begriff": "Wiederholungsbereich",
+          "erklaerung": "Die Spanne, in der du bleiben sollst, z. B. 8–12. Schaffst du überall das obere Ende, wird das Gewicht erhöht."
+        },
+        {
+          "id": "rir",
+          "begriff": "RIR",
+          "erklaerung": "„Reps in Reserve“: wie viele Wiederholungen du am Ende des Satzes noch sauber geschafft hättest. RIR 2 = noch 2 drin, RIR 0 = keine mehr. Die App fragt das nach dem letzten Satz einer Übung ab."
+        },
+        {
+          "id": "harter-satz",
+          "begriff": "Harter Satz",
+          "erklaerung": "Ein Satz, der nah an deine Grenze geht: höchstens 3 Wiederholungen im Tank. Nur harte Sätze zählen fürs Wochenvolumen."
+        },
+        {
+          "id": "pause",
+          "begriff": "Pause",
+          "erklaerung": "Zeit zwischen zwei Sätzen. Grundübungen 120 s, Isolationsübungen 75 s. Die Watch zählt mit."
+        }
+      ]
+    },
+    {
+      "id": "fortschritt",
+      "name": "Gewicht & Fortschritt",
+      "begriffe": [
+        {
+          "id": "arbeitsgewicht",
+          "begriff": "Arbeitsgewicht",
+          "erklaerung": "Das Gewicht, mit dem du die Sätze einer Übung gerade machst."
+        },
+        {
+          "id": "progression",
+          "begriff": "Steigern (Progression)",
+          "erklaerung": "Erst werden die Wiederholungen mehr, dann das Gewicht: Schaffst du alle Sätze am oberen Ende des Bereichs beim Ziel-RIR, schlägt die App die nächste Gewichtsstufe vor."
+        },
+        {
+          "id": "gewichtsstufe",
+          "begriff": "Gewichtsstufe",
+          "erklaerung": "Der kleinste Sprung, den ein Gerät erlaubt, z. B. 2,5 kg am Kabelzug. Stellst du im Gerätepark ein."
+        },
+        {
+          "id": "stockt",
+          "begriff": "Stockt",
+          "erklaerung": "Eine Übung hat 3 Wochen oder länger weder bei Gewicht noch bei Wiederholungen zugelegt. Das fließt in die Blockauswertung ein."
+        },
+        {
+          "id": "einstiegswoche",
+          "begriff": "Einstiegswoche",
+          "erklaerung": "Die erste Woche, wenn die App deine Gewichte noch nicht kennt. Du tastest dich Satz für Satz an ein Gewicht heran, bei dem noch 2–3 Wiederholungen im Tank sind."
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "name": "Plan",
+      "begriffe": [
+        {
+          "id": "grunduebung",
+          "begriff": "Grundübung",
+          "erklaerung": "Übung, die mehrere Gelenke und große Muskeln bewegt, z. B. Beinpresse, Rudern, Latzug, Brustpresse."
+        },
+        {
+          "id": "isolation",
+          "begriff": "Isolationsübung",
+          "erklaerung": "Übung für einen einzelnen Muskel, z. B. Bizepscurls, Seitheben, Beinbeuger."
+        },
+        {
+          "id": "slot",
+          "begriff": "Slot",
+          "erklaerung": "Ein Platz in der Einheit für ein Bewegungsmuster, z. B. „horizontaler Zug“. Im Slot stehen mehrere passende Übungen; die erste ist dein Standard, die anderen sind zum Tauschen."
+        },
+        {
+          "id": "wochenvolumen",
+          "begriff": "Wochenvolumen",
+          "erklaerung": "Wie viele harte Sätze ein Muskel pro Woche bekommt. Ziel 10–16. Hilft ein Muskel nur mit (z. B. Bizeps beim Rudern), zählt der Satz halb."
+        },
+        {
+          "id": "split",
+          "begriff": "Split",
+          "erklaerung": "Wie die Muskeln auf die Trainingstage verteilt werden: Ganzkörper (alles an jedem Tag), Ober-/Unterkörper oder Push/Pull/Beine (Drücken, Ziehen, Beine). Die App wählt ihn nach deinen Trainingstagen."
+        },
+        {
+          "id": "block",
+          "begriff": "Block",
+          "erklaerung": "4–8 Wochen (Standard 6), in denen deine Übungen gleich bleiben. So lässt sich Fortschritt messen. Am Ende gibt es eine Auswertung."
+        },
+        {
+          "id": "deload",
+          "begriff": "Deload",
+          "erklaerung": "Eine leichtere Woche zum Erholen: gleiches Gewicht, aber nur etwa 60 % der Sätze und mehr Luft im Tank."
+        },
+        {
+          "id": "schwerpunkt",
+          "begriff": "Schwerpunkt",
+          "erklaerung": "„Ausgewogen“ oder „Schulter & Nacken“: weniger Brustdrücken, mehr Rudern, dazu kurze Übungen für Nacken und Unterarm."
+        }
+      ]
+    },
+    {
+      "id": "koerper",
+      "name": "Körper & Erholung",
+      "begriffe": [
+        {
+          "id": "muskelkater",
+          "begriff": "Muskelkater",
+          "erklaerung": "Ziehen im Muskel 1–3 Tage nach dem Training. Normal und harmlos. Starker Muskelkater fließt in den Schnellcheck ein."
+        },
+        {
+          "id": "ruhepuls",
+          "begriff": "Ruhepuls",
+          "erklaerung": "Dein Puls in Ruhe, gemessen von der Watch. Steigt er über Tage an, ist das oft ein Zeichen für zu wenig Erholung."
+        },
+        {
+          "id": "hrv",
+          "begriff": "HRV",
+          "erklaerung": "Herzfrequenzvariabilität: wie stark der Abstand zwischen Herzschlägen schwankt. Höher als dein eigener Schnitt ist meist gut erholt. Die App vergleicht nur mit deinem eigenen Wochentrend."
+        },
+        {
+          "id": "magermasse",
+          "begriff": "Magermasse",
+          "erklaerung": "Alles außer Fett: Muskeln, Wasser, Knochen, Organe. Beim Abnehmen soll möglichst wenig davon verloren gehen."
+        }
+      ]
+    }
+  ]
+}

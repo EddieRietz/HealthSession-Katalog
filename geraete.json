@@ -1,0 +1,96 @@
+{
+  "version": "2026-11-05",
+  "geraete": [
+    {
+      "id": "latzugmaschine",
+      "name": "Latzugmaschine",
+      "kategorie": "maschine",
+      "last": "steckgewicht",
+      "stufe_kg": 5
+    },
+    {
+      "id": "kabelzug",
+      "name": "Kabelzug",
+      "kategorie": "maschine",
+      "last": "steckgewicht",
+      "stufe_kg": 2.5
+    },
+    {
+      "id": "beinpresse",
+      "name": "Beinpresse",
+      "kategorie": "maschine",
+      "last": "steckgewicht",
+      "stufe_kg": 10
+    },
+    {
+      "id": "beinbeuger",
+      "name": "Beinbeuger",
+      "kategorie": "maschine",
+      "last": "steckgewicht",
+      "stufe_kg": 5
+    },
+    {
+      "id": "beinstrecker",
+      "name": "Beinstrecker",
+      "kategorie": "maschine",
+      "last": "steckgewicht",
+      "stufe_kg": 5
+    },
+    {
+      "id": "brustpresse",
+      "name": "Brustpresse",
+      "kategorie": "maschine",
+      "last": "steckgewicht",
+      "stufe_kg": 5
+    },
+    {
+      "id": "schulterpresse",
+      "name": "Schulterpresse",
+      "kategorie": "maschine",
+      "last": "steckgewicht",
+      "stufe_kg": 5
+    },
+    {
+      "id": "klimmzug-assistiert",
+      "name": "Klimmzugstation, assistiert",
+      "kategorie": "maschine",
+      "last": "gegengewicht",
+      "stufe_kg": 5
+    },
+    {
+      "id": "kurzhanteln",
+      "name": "Kurzhanteln",
+      "kategorie": "frei",
+      "last": "hantel",
+      "stufe_kg": 2
+    },
+    {
+      "id": "langhantel",
+      "name": "Langhantel",
+      "kategorie": "frei",
+      "last": "scheiben",
+      "stufe_kg": 2.5
+    },
+    {
+      "id": "hantelbank",
+      "name": "Hantelbank (verstellbar)",
+      "kategorie": "zubehoer",
+      "last": "keine",
+      "stufe_kg": null
+    },
+    {
+      "id": "matte",
+      "name": "Matte",
+      "kategorie": "zubehoer",
+      "last": "koerpergewicht",
+      "stufe_kg": null
+    },
+    {
+      "id": "ruderergometer",
+      "name": "Ruderergometer",
+      "kategorie": "cardio",
+      "last": "widerstand",
+      "stufe_kg": null
+    }
+  ]
+}

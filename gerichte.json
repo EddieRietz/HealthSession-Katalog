@@ -1,0 +1,1284 @@
+{
+  "version": "2026-11-04",
+  "rollen": {
+    "protein": "Proteinbasis",
+    "saettigung": "Sättigungsbasis",
+    "gemuese": "Gemüse/Obst",
+    "fett": "Fettquelle",
+    "geschmack": "Würze",
+    "topping": "Topping",
+    "basis": "Flüssigkeit"
+  },
+  "skalierung": {
+    "protein": "wird aufs Proteinziel der Mahlzeit skaliert",
+    "min": "Untergrenze, darf wachsen",
+    "frei": "passt sich dem Kalorienbudget an",
+    "fix": "bleibt gleich"
+  },
+  "gerichte": [
+    {
+      "id": "skyr-hafer-bowl",
+      "name": "Skyr-Hafer-Bowl mit Beeren",
+      "typ": "haupt",
+      "kueche": "frühstück",
+      "slots": [
+        "mittag"
+      ],
+      "zeit_min": 5,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "skyr-lidl",
+          "menge_g": 250,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "proteinmix-erbse-reis",
+          "menge_g": 35,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "saettigung",
+          "produkt": "haferflocken-lidl",
+          "menge_g": 40,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "beerenmix-tk-lidl",
+          "menge_g": 125,
+          "skalierung": "min",
+          "tausch": [
+            "heidelbeeren-tk-lidl"
+          ]
+        },
+        {
+          "rolle": "fett",
+          "produkt": "leinsamen-geschrotet",
+          "menge_g": 10,
+          "skalierung": "frei",
+          "tausch": [
+            "kuerbiskerne"
+          ]
+        }
+      ],
+      "aromen": [
+        "Zimt"
+      ],
+      "schritte": [
+        "Proteinpulver mit etwas Wasser glatt rühren.",
+        "Skyr unterrühren.",
+        "Haferflocken, Beeren und Leinsamen darauf."
+      ],
+      "beilagen": [],
+      "tags": [
+        "nach-training",
+        "ldl-senkend",
+        "schnell"
+      ]
+    },
+    {
+      "id": "ruehrei-tofu-spinat",
+      "name": "Rührei mit Tofu und Spinat",
+      "typ": "haupt",
+      "kueche": "europäisch",
+      "slots": [
+        "mittag"
+      ],
+      "zeit_min": 12,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "eier-bio-lidl",
+          "menge_g": 120,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "tofu-vemondo",
+          "menge_g": 150,
+          "skalierung": "protein",
+          "tausch": [
+            "tempeh-bioland"
+          ]
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "blattspinat-tk-freshona",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 5,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "saettigung",
+          "produkt": "haferbrot-lidl",
+          "menge_g": 57,
+          "skalierung": "frei"
+        }
+      ],
+      "aromen": [
+        "Kurkuma",
+        "Pfeffer",
+        "Schnittlauch"
+      ],
+      "schritte": [
+        "Spinat in Öl zusammenfallen lassen.",
+        "Tofu zerbröseln und kurz anbraten.",
+        "2 Eier verquirlen, dazugeben und stocken lassen.",
+        "Mit Brot servieren."
+      ],
+      "beilagen": [
+        "tomaten-gurken-salat",
+        "rucola-zitrone"
+      ],
+      "tags": [
+        "schnell"
+      ]
+    },
+    {
+      "id": "omelett-champignon",
+      "name": "Champignon-Omelett",
+      "typ": "haupt",
+      "kueche": "europäisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 15,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "eier-bio-lidl",
+          "menge_g": 120,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "skyr-lidl",
+          "menge_g": 100,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "champignons-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "tomate-frisch",
+          "menge_g": 120,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "blattspinat-tk-freshona",
+          "menge_g": 100,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 5,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "saettigung",
+          "produkt": "haferbrot-lidl",
+          "menge_g": 57,
+          "skalierung": "frei"
+        }
+      ],
+      "aromen": [
+        "Thymian",
+        "Pfeffer"
+      ],
+      "schritte": [
+        "Pilze in Öl anbraten, Spinat dazu.",
+        "Eier mit Skyr verquirlen, über das Gemüse geben.",
+        "Zugedeckt stocken lassen, Tomaten darauf."
+      ],
+      "beilagen": [
+        "rucola-zitrone"
+      ],
+      "tags": []
+    },
+    {
+      "id": "shakshuka-kichererbsen",
+      "name": "Shakshuka mit Kichererbsen",
+      "typ": "haupt",
+      "kueche": "levantinisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 20,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "eier-bio-lidl",
+          "menge_g": 180,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "saettigung",
+          "produkt": "kichererbsen-lidl",
+          "menge_g": 100,
+          "skalierung": "frei",
+          "tausch": [
+            "weisse-bohnen-lidl"
+          ]
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "passierte-tomaten-lidl",
+          "menge_g": 250,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "paprika-rot-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "zwiebel-frisch",
+          "menge_g": 80,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 10,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "topping",
+          "produkt": "skyr-lidl",
+          "menge_g": 80,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Kreuzkümmel",
+        "Paprikapulver",
+        "Knoblauch",
+        "Koriander"
+      ],
+      "schritte": [
+        "Zwiebel und Paprika in Öl weich dünsten.",
+        "Passata und Kichererbsen dazu, 5 Min köcheln.",
+        "Mulden formen, Eier hineingleiten lassen, zugedeckt garen.",
+        "Mit Skyr-Klecks servieren."
+      ],
+      "beilagen": [
+        "haferbrot-scheibe",
+        "gurken-skyr-salat"
+      ],
+      "tags": [
+        "ballaststoffreich"
+      ]
+    },
+    {
+      "id": "linsen-dal",
+      "name": "Linsen-Dal",
+      "typ": "haupt",
+      "kueche": "indisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 25,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "rote-linsen-lidl",
+          "menge_g": 90,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "passierte-tomaten-lidl",
+          "menge_g": 200,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "blattspinat-tk-freshona",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "zwiebel-frisch",
+          "menge_g": 80,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "knoblauch-frisch",
+          "menge_g": 6,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 15,
+          "skalierung": "frei"
+        }
+      ],
+      "aromen": [
+        "Kreuzkümmel",
+        "Kurkuma",
+        "Garam Masala",
+        "Ingwer"
+      ],
+      "schritte": [
+        "Zwiebel, Knoblauch und Gewürze in Öl anschwitzen.",
+        "Linsen, Passata und 300 ml Wasser dazu, 15 Min köcheln.",
+        "Spinat unterrühren."
+      ],
+      "beilagen": [
+        "gurken-skyr-salat",
+        "brokkoli-knoblauch"
+      ],
+      "tags": [
+        "ldl-senkend",
+        "ballaststoffreich",
+        "vorkochbar"
+      ]
+    },
+    {
+      "id": "kichererbsen-tofu-curry",
+      "name": "Kichererbsen-Tofu-Curry mit Spinat",
+      "typ": "haupt",
+      "kueche": "indisch",
+      "slots": [
+        "abend"
+      ],
+      "zeit_min": 20,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "tofu-vemondo",
+          "menge_g": 150,
+          "skalierung": "protein",
+          "tausch": [
+            "tempeh-bioland"
+          ]
+        },
+        {
+          "rolle": "saettigung",
+          "produkt": "kichererbsen-lidl",
+          "menge_g": 200,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "blattspinat-tk-freshona",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "passierte-tomaten-lidl",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "zwiebel-frisch",
+          "menge_g": 80,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 10,
+          "skalierung": "frei"
+        }
+      ],
+      "aromen": [
+        "Currypulver",
+        "Kreuzkümmel",
+        "Ingwer",
+        "Knoblauch"
+      ],
+      "schritte": [
+        "Tofu würfeln und in Öl anbraten, herausnehmen.",
+        "Zwiebel und Gewürze anschwitzen, Passata und Kichererbsen dazu.",
+        "Spinat und Tofu unterheben, 5 Min ziehen lassen."
+      ],
+      "beilagen": [
+        "gurken-skyr-salat"
+      ],
+      "tags": [
+        "ballaststoffreich",
+        "vorkochbar"
+      ]
+    },
+    {
+      "id": "chili-kidney",
+      "name": "Chili mit Kidneybohnen",
+      "typ": "haupt",
+      "kueche": "mexikanisch",
+      "slots": [
+        "abend"
+      ],
+      "zeit_min": 25,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "kidneybohnen-lidl",
+          "menge_g": 200,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "rote-linsen-lidl",
+          "menge_g": 40,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "passierte-tomaten-lidl",
+          "menge_g": 200,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "paprika-rot-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "zwiebel-frisch",
+          "menge_g": 80,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "saettigung",
+          "produkt": "mais-lidl",
+          "menge_g": 50,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 10,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "topping",
+          "produkt": "skyr-lidl",
+          "menge_g": 100,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Kreuzkümmel",
+        "Chili",
+        "Oregano",
+        "Knoblauch"
+      ],
+      "schritte": [
+        "Zwiebel und Paprika in Öl anbraten.",
+        "Linsen, Passata und 200 ml Wasser dazu, 10 Min köcheln.",
+        "Kidneybohnen und Mais dazu, 5 Min.",
+        "Mit Skyr-Dip servieren."
+      ],
+      "beilagen": [
+        "rucola-zitrone"
+      ],
+      "tags": [
+        "ldl-senkend",
+        "ballaststoffreich",
+        "vorkochbar"
+      ]
+    },
+    {
+      "id": "tempeh-brokkoli-pfanne",
+      "name": "Tempeh-Brokkoli-Pfanne",
+      "typ": "haupt",
+      "kueche": "asiatisch",
+      "slots": [
+        "abend"
+      ],
+      "zeit_min": 15,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "tempeh-bioland",
+          "menge_g": 150,
+          "skalierung": "protein",
+          "tausch": [
+            "tofu-vemondo"
+          ]
+        },
+        {
+          "rolle": "protein",
+          "produkt": "edamame-tk",
+          "menge_g": 100,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "brokkoli-tk-freshona",
+          "menge_g": 250,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 10,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "sojasauce-kikkoman",
+          "menge_g": 5,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "knoblauch-frisch",
+          "menge_g": 3,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Ingwer",
+        "Chili",
+        "Frühlingszwiebel"
+      ],
+      "schritte": [
+        "Tempeh in Scheiben schneiden und in Öl knusprig braten.",
+        "Brokkoli und Edamame dazu, 5 Min mitbraten.",
+        "Mit Sojasauce, Knoblauch und Ingwer abschmecken."
+      ],
+      "beilagen": [
+        "spinat-knoblauch"
+      ],
+      "tags": [
+        "schnell"
+      ]
+    },
+    {
+      "id": "tofu-paprika-pfanne",
+      "name": "Tofu-Paprika-Pfanne",
+      "typ": "haupt",
+      "kueche": "asiatisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 15,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "tofu-vemondo",
+          "menge_g": 200,
+          "skalierung": "protein",
+          "tausch": [
+            "tempeh-bioland"
+          ]
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "brokkoli-tk-freshona",
+          "menge_g": 200,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "paprika-rot-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "saettigung",
+          "produkt": "erbsen-lidl",
+          "menge_g": 100,
+          "skalierung": "frei",
+          "tausch": [
+            "edamame-tk"
+          ]
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 10,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "sojasauce-kikkoman",
+          "menge_g": 5,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "zitronensaft-frisch",
+          "menge_g": 10,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Ingwer",
+        "Knoblauch"
+      ],
+      "schritte": [
+        "Tofu würfeln, trocken tupfen, in Öl anbraten.",
+        "Gemüse und Erbsen dazu, bissfest braten.",
+        "Mit Sojasauce und Zitrone abschmecken."
+      ],
+      "beilagen": [
+        "edamame-beilage"
+      ],
+      "tags": [
+        "schnell"
+      ]
+    },
+    {
+      "id": "weisse-bohnen-zucchini",
+      "name": "Weiße Bohnen mit Tomate und Zucchini",
+      "typ": "haupt",
+      "kueche": "mediterran",
+      "slots": [
+        "abend"
+      ],
+      "zeit_min": 20,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "weisse-bohnen-lidl",
+          "menge_g": 200,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "tofu-vemondo",
+          "menge_g": 150,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "zucchini-frisch",
+          "menge_g": 200,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "passierte-tomaten-lidl",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "knoblauch-frisch",
+          "menge_g": 6,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 10,
+          "skalierung": "frei"
+        }
+      ],
+      "aromen": [
+        "Rosmarin",
+        "Oregano",
+        "Chili"
+      ],
+      "schritte": [
+        "Zucchini und Tofu in Öl anbraten.",
+        "Knoblauch, Passata und Bohnen dazu, 10 Min köcheln.",
+        "Mit Kräutern abschmecken."
+      ],
+      "beilagen": [
+        "rucola-zitrone",
+        "haferbrot-scheibe"
+      ],
+      "tags": [
+        "ballaststoffreich",
+        "vorkochbar"
+      ]
+    },
+    {
+      "id": "kichererbsen-salat-ei",
+      "name": "Kichererbsensalat mit Ei und Tahini",
+      "typ": "haupt",
+      "kueche": "levantinisch",
+      "slots": [
+        "mittag"
+      ],
+      "zeit_min": 15,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "eier-bio-lidl",
+          "menge_g": 120,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "kichererbsen-lidl",
+          "menge_g": 200,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "gurke-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "tomate-frisch",
+          "menge_g": 120,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "rucola-frisch",
+          "menge_g": 40,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "tahini-bio",
+          "menge_g": 15,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "zitronensaft-frisch",
+          "menge_g": 15,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Petersilie",
+        "Minze",
+        "Sumach"
+      ],
+      "schritte": [
+        "Eier 8 Min kochen.",
+        "Gemüse würfeln, mit Kichererbsen und Rucola mischen.",
+        "Tahini mit Zitrone und Wasser glatt rühren, darübergeben."
+      ],
+      "beilagen": [
+        "haferbrot-scheibe"
+      ],
+      "tags": [
+        "ballaststoffreich",
+        "kalt"
+      ]
+    },
+    {
+      "id": "bohnen-tahini-bowl",
+      "name": "Bohnen-Tahini-Bowl mit Ofenzucchini",
+      "typ": "haupt",
+      "kueche": "levantinisch",
+      "slots": [
+        "abend"
+      ],
+      "zeit_min": 25,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "weisse-bohnen-lidl",
+          "menge_g": 150,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "kichererbsen-lidl",
+          "menge_g": 100,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "skyr-lidl",
+          "menge_g": 150,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "zucchini-frisch",
+          "menge_g": 200,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "paprika-rot-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "tahini-bio",
+          "menge_g": 15,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 5,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "zitronensaft-frisch",
+          "menge_g": 15,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Kreuzkümmel",
+        "Knoblauch",
+        "Petersilie"
+      ],
+      "schritte": [
+        "Zucchini und Paprika mit Öl 20 Min bei 220 °C rösten.",
+        "Skyr mit Tahini, Zitrone und Knoblauch verrühren.",
+        "Bohnen und Kichererbsen erwärmen, alles anrichten."
+      ],
+      "beilagen": [
+        "rucola-zitrone"
+      ],
+      "tags": [
+        "ldl-senkend",
+        "ballaststoffreich"
+      ]
+    },
+    {
+      "id": "gurken-skyr-salat",
+      "name": "Gurken-Skyr-Salat",
+      "typ": "beilage",
+      "kueche": "levantinisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 5,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "skyr-lidl",
+          "menge_g": 150,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "gurke-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "knoblauch-frisch",
+          "menge_g": 3,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "zitronensaft-frisch",
+          "menge_g": 10,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Minze",
+        "Dill"
+      ],
+      "schritte": [
+        "Gurke raspeln, mit Skyr, Knoblauch und Zitrone mischen."
+      ],
+      "beilagen": [],
+      "tags": [
+        "kalt"
+      ]
+    },
+    {
+      "id": "brokkoli-knoblauch",
+      "name": "Gedünsteter Brokkoli",
+      "typ": "beilage",
+      "kueche": "europäisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 8,
+      "bausteine": [
+        {
+          "rolle": "gemuese",
+          "produkt": "brokkoli-tk-freshona",
+          "menge_g": 250,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 5,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "knoblauch-frisch",
+          "menge_g": 3,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Zitronenabrieb"
+      ],
+      "schritte": [
+        "Brokkoli 6 Min dämpfen, mit Öl und Knoblauch schwenken."
+      ],
+      "beilagen": [],
+      "tags": []
+    },
+    {
+      "id": "tomaten-gurken-salat",
+      "name": "Tomaten-Gurken-Salat",
+      "typ": "beilage",
+      "kueche": "mediterran",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 5,
+      "bausteine": [
+        {
+          "rolle": "gemuese",
+          "produkt": "tomate-frisch",
+          "menge_g": 120,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "gurke-frisch",
+          "menge_g": 150,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 5,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "apfelessig-lidl",
+          "menge_g": 10,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Oregano",
+        "Pfeffer"
+      ],
+      "schritte": [
+        "Würfeln, mit Öl und Essig anmachen."
+      ],
+      "beilagen": [],
+      "tags": [
+        "kalt"
+      ]
+    },
+    {
+      "id": "rucola-zitrone",
+      "name": "Rucola mit Zitrone und Senf",
+      "typ": "beilage",
+      "kueche": "mediterran",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 3,
+      "bausteine": [
+        {
+          "rolle": "gemuese",
+          "produkt": "rucola-frisch",
+          "menge_g": 40,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 5,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "zitronensaft-frisch",
+          "menge_g": 10,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "dijonsenf-maille",
+          "menge_g": 5,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [],
+      "schritte": [
+        "Öl, Zitrone und Senf verrühren, über den Rucola geben."
+      ],
+      "beilagen": [],
+      "tags": [
+        "kalt"
+      ]
+    },
+    {
+      "id": "spinat-knoblauch",
+      "name": "Spinat mit Knoblauch",
+      "typ": "beilage",
+      "kueche": "europäisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 6,
+      "bausteine": [
+        {
+          "rolle": "gemuese",
+          "produkt": "blattspinat-tk-freshona",
+          "menge_g": 200,
+          "skalierung": "min"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "olivenoel-lidl",
+          "menge_g": 5,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "knoblauch-frisch",
+          "menge_g": 3,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Muskat"
+      ],
+      "schritte": [
+        "Knoblauch in Öl anschwitzen, Spinat zusammenfallen lassen."
+      ],
+      "beilagen": [],
+      "tags": []
+    },
+    {
+      "id": "haferbrot-scheibe",
+      "name": "Haferbrot (1 Scheibe)",
+      "typ": "beilage",
+      "kueche": "europäisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 0,
+      "bausteine": [
+        {
+          "rolle": "saettigung",
+          "produkt": "haferbrot-lidl",
+          "menge_g": 57,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [],
+      "schritte": [],
+      "beilagen": [],
+      "tags": []
+    },
+    {
+      "id": "edamame-beilage",
+      "name": "Edamame mit Zitrone",
+      "typ": "beilage",
+      "kueche": "asiatisch",
+      "slots": [
+        "mittag",
+        "abend"
+      ],
+      "zeit_min": 5,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "edamame-tk",
+          "menge_g": 100,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "zitronensaft-frisch",
+          "menge_g": 5,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Chiliflocken"
+      ],
+      "schritte": [
+        "Edamame 4 Min garen, mit Zitrone beträufeln."
+      ],
+      "beilagen": [],
+      "tags": []
+    },
+    {
+      "id": "protein-shake",
+      "name": "Protein-Shake 2:1",
+      "typ": "snack",
+      "kueche": "snack",
+      "slots": [
+        "snack"
+      ],
+      "zeit_min": 2,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "proteinmix-erbse-reis",
+          "menge_g": 35,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "basis",
+          "produkt": "mandeldrink-lidl",
+          "menge_g": 300,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "leinsamen-geschrotet",
+          "menge_g": 10,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "beerenmix-tk-lidl",
+          "menge_g": 125,
+          "skalierung": "frei"
+        }
+      ],
+      "aromen": [],
+      "schritte": [
+        "Alles mixen."
+      ],
+      "beilagen": [],
+      "tags": [
+        "schnell"
+      ]
+    },
+    {
+      "id": "skyr-beeren-kerne",
+      "name": "Skyr mit Beeren und Kürbiskernen",
+      "typ": "snack",
+      "kueche": "snack",
+      "slots": [
+        "snack"
+      ],
+      "zeit_min": 2,
+      "bausteine": [
+        {
+          "rolle": "protein",
+          "produkt": "skyr-lidl",
+          "menge_g": 200,
+          "skalierung": "protein"
+        },
+        {
+          "rolle": "gemuese",
+          "produkt": "beerenmix-tk-lidl",
+          "menge_g": 125,
+          "skalierung": "frei"
+        },
+        {
+          "rolle": "fett",
+          "produkt": "kuerbiskerne",
+          "menge_g": 10,
+          "skalierung": "frei"
+        }
+      ],
+      "aromen": [
+        "Zimt"
+      ],
+      "schritte": [
+        "Beeren antauen lassen, mit Skyr und Kernen mischen."
+      ],
+      "beilagen": [],
+      "tags": [
+        "schnell"
+      ]
+    },
+    {
+      "id": "nussmix-portion",
+      "name": "Nuss-Mix (30 g)",
+      "typ": "snack",
+      "kueche": "snack",
+      "slots": [
+        "snack"
+      ],
+      "zeit_min": 0,
+      "bausteine": [
+        {
+          "rolle": "fett",
+          "produkt": "nussmix-alesto",
+          "menge_g": 30,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [],
+      "schritte": [],
+      "beilagen": [],
+      "tags": []
+    },
+    {
+      "id": "haferbrot-ei",
+      "name": "Haferbrot mit Ei",
+      "typ": "snack",
+      "kueche": "snack",
+      "slots": [
+        "snack"
+      ],
+      "zeit_min": 10,
+      "bausteine": [
+        {
+          "rolle": "saettigung",
+          "produkt": "haferbrot-lidl",
+          "menge_g": 57,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "protein",
+          "produkt": "eier-bio-lidl",
+          "menge_g": 60,
+          "skalierung": "fix"
+        },
+        {
+          "rolle": "geschmack",
+          "produkt": "dijonsenf-maille",
+          "menge_g": 5,
+          "skalierung": "fix"
+        }
+      ],
+      "aromen": [
+        "Schnittlauch"
+      ],
+      "schritte": [
+        "Ei kochen, auf dem Brot mit Senf servieren."
+      ],
+      "beilagen": [],
+      "tags": []
+    }
+  ]
+}

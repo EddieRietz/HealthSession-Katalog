@@ -1,0 +1,701 @@
+{
+  "version": "2026-11-05",
+  "uebungen": [
+    {
+      "id": "latzug-breit",
+      "name": "Latzug, breiter Griff",
+      "muster": "vertikaler-zug",
+      "muskel_primaer": "ruecken",
+      "muskel_sekundaer": [
+        "bizeps",
+        "hintere-schulter"
+      ],
+      "geraete": [
+        "latzugmaschine"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Stange zur oberen Brust ziehen, nicht in den Nacken.",
+        "Schultern zuerst nach unten ziehen, dann die Arme.",
+        "Oben kontrolliert strecken."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "latzug-eng",
+      "name": "Latzug, enger Griff",
+      "muster": "vertikaler-zug",
+      "muskel_primaer": "ruecken",
+      "muskel_sekundaer": [
+        "bizeps"
+      ],
+      "geraete": [
+        "latzugmaschine"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Ellbogen nah am Körper nach unten führen.",
+        "Oberkörper leicht zurückgelehnt, nicht schwingen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "klimmzug-assistiert",
+      "name": "Klimmzug, assistiert",
+      "muster": "vertikaler-zug",
+      "muskel_primaer": "ruecken",
+      "muskel_sekundaer": [
+        "bizeps",
+        "core"
+      ],
+      "geraete": [
+        "klimmzug-assistiert"
+      ],
+      "wdh": [
+        6,
+        10
+      ],
+      "hinweise": [
+        "Mehr Gegengewicht = leichter.",
+        "Brust zur Stange, unten ganz strecken."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kabelrudern-sitzend",
+      "name": "Rudern am Kabel, sitzend",
+      "muster": "horizontaler-zug",
+      "muskel_primaer": "ruecken",
+      "muskel_sekundaer": [
+        "bizeps",
+        "hintere-schulter"
+      ],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Rücken gerade, Brust raus.",
+        "Griff zum Bauchnabel ziehen, Schulterblätter zusammen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kh-rudern-einarmig",
+      "name": "Kurzhantel-Rudern, einarmig",
+      "muster": "horizontaler-zug",
+      "muskel_primaer": "ruecken",
+      "muskel_sekundaer": [
+        "bizeps"
+      ],
+      "geraete": [
+        "kurzhanteln",
+        "hantelbank"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Knie und Hand auf der Bank, Rücken flach.",
+        "Hantel zur Hüfte ziehen, nicht zur Schulter."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "face-pulls",
+      "name": "Face Pulls am Kabel",
+      "muster": "horizontaler-zug",
+      "muskel_primaer": "hintere-schulter",
+      "muskel_sekundaer": [
+        "ruecken"
+      ],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        12,
+        15
+      ],
+      "hinweise": [
+        "Seil auf Augenhöhe, Hände neben die Ohren ziehen.",
+        "Leichtes Gewicht, sauber ausführen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kh-curls",
+      "name": "Bizepscurls, Kurzhantel",
+      "muster": "isolation-arme",
+      "muskel_primaer": "bizeps",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kurzhanteln"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Ellbogen bleiben am Körper.",
+        "Langsam ablassen, nicht schwingen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "hammercurls-kabel",
+      "name": "Hammercurls am Kabel (Seil)",
+      "muster": "isolation-arme",
+      "muskel_primaer": "bizeps",
+      "muskel_sekundaer": [
+        "unterarm"
+      ],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Neutraler Griff, weniger Last auf dem Ellbogen.",
+        "Oben kurz halten."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kabel-curls",
+      "name": "Bizepscurls am Kabel",
+      "muster": "isolation-arme",
+      "muskel_primaer": "bizeps",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Konstante Spannung über die ganze Bewegung."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "brustpresse",
+      "name": "Brustpresse",
+      "muster": "horizontales-druecken",
+      "muskel_primaer": "brust",
+      "muskel_sekundaer": [
+        "trizeps",
+        "vordere-schulter"
+      ],
+      "geraete": [
+        "brustpresse"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Griffe auf Brusthöhe einstellen.",
+        "Schulterblätter an die Lehne, nicht ganz durchstrecken."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kh-bankdruecken",
+      "name": "Kurzhantel-Bankdrücken",
+      "muster": "horizontales-druecken",
+      "muskel_primaer": "brust",
+      "muskel_sekundaer": [
+        "trizeps",
+        "vordere-schulter"
+      ],
+      "geraete": [
+        "kurzhanteln",
+        "hantelbank"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Füße fest am Boden, leichtes Hohlkreuz ok.",
+        "Hanteln kontrolliert bis Brusthöhe ablassen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kh-schraegbank",
+      "name": "Kurzhantel-Schrägbankdrücken",
+      "muster": "horizontales-druecken",
+      "muskel_primaer": "brust",
+      "muskel_sekundaer": [
+        "vordere-schulter",
+        "trizeps"
+      ],
+      "geraete": [
+        "kurzhanteln",
+        "hantelbank"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Bank auf ca. 30°.",
+        "Ellbogen etwa 45° vom Körper."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "schulterpresse",
+      "name": "Schulterpresse",
+      "muster": "vertikales-druecken",
+      "muskel_primaer": "vordere-schulter",
+      "muskel_sekundaer": [
+        "trizeps",
+        "seitliche-schulter"
+      ],
+      "geraete": [
+        "schulterpresse"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Griffe auf Schulterhöhe.",
+        "Rücken an der Lehne, nicht ins Hohlkreuz drücken."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kh-schulterdruecken",
+      "name": "Kurzhantel-Schulterdrücken, sitzend",
+      "muster": "vertikales-druecken",
+      "muskel_primaer": "vordere-schulter",
+      "muskel_sekundaer": [
+        "trizeps",
+        "seitliche-schulter"
+      ],
+      "geraete": [
+        "kurzhanteln",
+        "hantelbank"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Bank aufrecht, Hanteln seitlich auf Ohrhöhe starten."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "seitheben-kh",
+      "name": "Seitheben, Kurzhantel",
+      "muster": "isolation-schulter",
+      "muskel_primaer": "seitliche-schulter",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kurzhanteln"
+      ],
+      "wdh": [
+        12,
+        15
+      ],
+      "hinweise": [
+        "Arme leicht gebeugt bis Schulterhöhe heben.",
+        "Leichtes Gewicht, kein Schwung."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "seitheben-kabel",
+      "name": "Seitheben am Kabel",
+      "muster": "isolation-schulter",
+      "muskel_primaer": "seitliche-schulter",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        12,
+        15
+      ],
+      "hinweise": [
+        "Kabel hinter dem Körper, gleichmäßige Spannung."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "reverse-flys-kh",
+      "name": "Reverse Flys, Kurzhantel",
+      "muster": "horizontaler-zug",
+      "muskel_primaer": "hintere-schulter",
+      "muskel_sekundaer": [
+        "ruecken"
+      ],
+      "geraete": [
+        "kurzhanteln",
+        "hantelbank"
+      ],
+      "wdh": [
+        12,
+        15
+      ],
+      "hinweise": [
+        "Brust auf die schräge Bank, Arme leicht gebeugt seitlich heben.",
+        "Schulterblätter zusammen, leichtes Gewicht."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "shrugs-kh",
+      "name": "Shrugs, Kurzhantel",
+      "muster": "nacken",
+      "muskel_primaer": "nacken",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kurzhanteln"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Schultern gerade nach oben zu den Ohren ziehen, nicht kreisen.",
+        "Oben kurz halten, langsam ablassen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "shrugs-kabel",
+      "name": "Shrugs am Kabel",
+      "muster": "nacken",
+      "muskel_primaer": "nacken",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Griffe tief, Schultern nach oben ziehen.",
+        "Kopf neutral, nicht nach vorn schieben."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "handgelenk-extension-kh",
+      "name": "Handgelenk-Strecken, Kurzhantel",
+      "muster": "unterarm",
+      "muskel_primaer": "unterarm",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kurzhanteln",
+        "hantelbank"
+      ],
+      "wdh": [
+        12,
+        20
+      ],
+      "hinweise": [
+        "Unterarm auf dem Oberschenkel oder der Bank, Handrücken oben.",
+        "Nur das Handgelenk bewegt sich; sehr leichtes Gewicht."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "handgelenk-beugen-kh",
+      "name": "Handgelenk-Beugen, Kurzhantel",
+      "muster": "unterarm",
+      "muskel_primaer": "unterarm",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kurzhanteln",
+        "hantelbank"
+      ],
+      "wdh": [
+        12,
+        20
+      ],
+      "hinweise": [
+        "Unterarm aufgelegt, Handfläche oben.",
+        "Langsam und schmerzfrei, nicht bis zur Ermüdung durchziehen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "trizepsdruecken-kabel",
+      "name": "Trizepsdrücken am Kabel",
+      "muster": "isolation-arme",
+      "muskel_primaer": "trizeps",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Ellbogen am Körper fixiert, nur der Unterarm bewegt sich."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "ueberkopf-trizeps-kabel",
+      "name": "Überkopf-Trizeps am Kabel",
+      "muster": "isolation-arme",
+      "muskel_primaer": "trizeps",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Seil hinter den Kopf, Ellbogen zeigen nach vorne."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "beinpresse",
+      "name": "Beinpresse",
+      "muster": "knie-dominant",
+      "muskel_primaer": "quadrizeps",
+      "muskel_sekundaer": [
+        "gesaess",
+        "beinbeuger"
+      ],
+      "geraete": [
+        "beinpresse"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Füße schulterbreit, Knie zeigen über die Zehen.",
+        "Unten nicht den unteren Rücken abheben, oben nicht durchstrecken."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "goblet-squat",
+      "name": "Goblet Squat",
+      "muster": "knie-dominant",
+      "muskel_primaer": "quadrizeps",
+      "muskel_sekundaer": [
+        "gesaess",
+        "core"
+      ],
+      "geraete": [
+        "kurzhanteln"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Hantel vor der Brust, aufrecht bleiben.",
+        "So tief wie mit geradem Rücken möglich."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "ausfallschritte-kh",
+      "name": "Ausfallschritte, Kurzhantel",
+      "muster": "knie-dominant",
+      "muskel_primaer": "quadrizeps",
+      "muskel_sekundaer": [
+        "gesaess"
+      ],
+      "geraete": [
+        "kurzhanteln"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Großer Schritt, hinteres Knie Richtung Boden.",
+        "Vorderes Knie bleibt stabil über dem Fuß."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "beinstrecker",
+      "name": "Beinstrecker",
+      "muster": "knie-dominant",
+      "muskel_primaer": "quadrizeps",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "beinstrecker"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Drehpunkt auf Kniehöhe einstellen.",
+        "Oben kurz halten, langsam ablassen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "rdl-kh",
+      "name": "Rumänisches Kreuzheben, Kurzhantel",
+      "muster": "hueft-dominant",
+      "muskel_primaer": "beinbeuger",
+      "muskel_sekundaer": [
+        "gesaess",
+        "unterer-ruecken"
+      ],
+      "geraete": [
+        "kurzhanteln"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Hüfte nach hinten schieben, Rücken gerade.",
+        "Hanteln nah an den Beinen bis knapp unter die Knie."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "beinbeuger-maschine",
+      "name": "Beinbeuger",
+      "muster": "hueft-dominant",
+      "muskel_primaer": "beinbeuger",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "beinbeuger"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Drehpunkt auf Kniehöhe.",
+        "Hüfte bleibt am Polster."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "hip-thrust-lh",
+      "name": "Hip Thrust, Langhantel",
+      "muster": "hueft-dominant",
+      "muskel_primaer": "gesaess",
+      "muskel_sekundaer": [
+        "beinbeuger"
+      ],
+      "geraete": [
+        "langhantel",
+        "hantelbank"
+      ],
+      "wdh": [
+        8,
+        12
+      ],
+      "hinweise": [
+        "Schulterblätter an der Bank, Kinn zur Brust.",
+        "Oben Gesäß anspannen, kein Hohlkreuz."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "plank",
+      "name": "Unterarmstütz",
+      "muster": "core",
+      "muskel_primaer": "core",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "matte"
+      ],
+      "wdh": [
+        30,
+        60
+      ],
+      "hinweise": [
+        "Körper eine Linie, Bauch und Gesäß anspannen.",
+        "Wiederholungen = Sekunden."
+      ],
+      "atmung": "Ruhig weiteratmen."
+    },
+    {
+      "id": "pallof-press",
+      "name": "Pallof Press am Kabel",
+      "muster": "core",
+      "muskel_primaer": "core",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        10,
+        12
+      ],
+      "hinweise": [
+        "Seitlich zum Kabel, Griff vor der Brust nach vorne drücken.",
+        "Nicht zum Kabel verdrehen lassen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "kabel-crunch",
+      "name": "Kabel-Crunch, kniend",
+      "muster": "core",
+      "muskel_primaer": "core",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "kabelzug"
+      ],
+      "wdh": [
+        10,
+        15
+      ],
+      "hinweise": [
+        "Seil am Kopf, Oberkörper einrollen statt aus der Hüfte ziehen."
+      ],
+      "atmung": "Bei Anstrengung ausatmen."
+    },
+    {
+      "id": "rudern-intervalle",
+      "name": "Rudern, Intervalle",
+      "muster": "cardio",
+      "muskel_primaer": "ausdauer",
+      "muskel_sekundaer": [],
+      "geraete": [
+        "ruderergometer"
+      ],
+      "wdh": [
+        20,
+        20
+      ],
+      "hinweise": [
+        "z. B. 1 Min kräftig, 1 Min locker; Fortschritt über Watt oder 500-m-Zeit.",
+        "Wiederholungen = Minuten gesamt."
+      ],
+      "atmung": "Gleichmäßig atmen."
+    }
+  ]
+}
