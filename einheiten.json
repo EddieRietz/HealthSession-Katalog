@@ -206,7 +206,8 @@
           "uebungen": [
             "latzug-breit",
             "klimmzug-assistiert",
-            "latzug-eng"
+            "latzug-eng",
+            "klimmzug-weste"
           ],
           "saetze": 3
         },
@@ -367,7 +368,8 @@
           "uebungen": [
             "klimmzug-assistiert",
             "latzug-eng",
-            "latzug-breit"
+            "latzug-breit",
+            "klimmzug-weste"
           ],
           "saetze": 3
         },
@@ -459,7 +461,8 @@
           "uebungen": [
             "latzug-breit",
             "klimmzug-assistiert",
-            "latzug-eng"
+            "latzug-eng",
+            "klimmzug-weste"
           ],
           "saetze": 3
         },
@@ -618,7 +621,8 @@
           "uebungen": [
             "klimmzug-assistiert",
             "latzug-eng",
-            "latzug-breit"
+            "latzug-breit",
+            "klimmzug-weste"
           ],
           "saetze": 3
         },
@@ -805,7 +809,8 @@
           "uebungen": [
             "latzug-breit",
             "klimmzug-assistiert",
-            "latzug-eng"
+            "latzug-eng",
+            "klimmzug-weste"
           ],
           "saetze": 3
         },
@@ -993,7 +998,8 @@
           "uebungen": [
             "klimmzug-assistiert",
             "latzug-eng",
-            "latzug-breit"
+            "latzug-breit",
+            "klimmzug-weste"
           ],
           "saetze": 3
         },

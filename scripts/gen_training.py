@@ -18,13 +18,15 @@ geraete = [
     {"id": "langhantel", "name": "Langhantel", "kategorie": "frei", "last": "scheiben", "stufe_kg": 2.5},
     {"id": "hantelbank", "name": "Hantelbank (verstellbar)", "kategorie": "zubehoer", "last": "keine", "stufe_kg": None},
     {"id": "matte", "name": "Matte", "kategorie": "zubehoer", "last": "koerpergewicht", "stufe_kg": None},
+    {"id": "gewichtsweste", "name": "Gewichtsweste", "kategorie": "zubehoer", "last": "weste", "stufe_kg": 2.5},
     {"id": "ruderergometer", "name": "Ruderergometer", "kategorie": "cardio", "last": "widerstand", "stufe_kg": None},
 ]
 
 # ---------------- Uebungen ----------------
-def u(id, name, muster, primaer, sekundaer, geraete, wdh, hinweise, atmung="Bei Anstrengung ausatmen."):
+def u(id, name, muster, primaer, sekundaer, geraete, wdh, hinweise, atmung="Bei Anstrengung ausatmen.", **progression):
+    # progression: "assistenz" (Gegengewicht sinkt, bei 0 kg weiter mit `danach`), "zeit" (Sekunden, `zeit_schritt_s`), "keine"
     return {"id": id, "name": name, "muster": muster, "muskel_primaer": primaer, "muskel_sekundaer": sekundaer,
-            "geraete": geraete, "wdh": wdh, "hinweise": hinweise, "atmung": atmung}
+            "geraete": geraete, "wdh": wdh, "hinweise": hinweise, "atmung": atmung, **progression}
 
 uebungen = [
     # vertikaler Zug
@@ -33,7 +35,10 @@ uebungen = [
     u("latzug-eng", "Latzug, enger Griff", "vertikaler-zug", "ruecken", ["bizeps"], ["latzugmaschine"], [8, 12],
       ["Ellbogen nah am Körper nach unten führen.", "Oberkörper leicht zurückgelehnt, nicht schwingen."]),
     u("klimmzug-assistiert", "Klimmzug, assistiert", "vertikaler-zug", "ruecken", ["bizeps", "core"], ["klimmzug-assistiert"], [6, 10],
-      ["Mehr Gegengewicht = leichter.", "Brust zur Stange, unten ganz strecken."]),
+      ["Mehr Gegengewicht = leichter.", "Brust zur Stange, unten ganz strecken."],
+      progression="assistenz", danach="klimmzug-weste"),
+    u("klimmzug-weste", "Klimmzug mit Gewichtsweste", "vertikaler-zug", "ruecken", ["bizeps", "core"], ["klimmzug-assistiert", "gewichtsweste"], [6, 10],
+      ["Ohne Gegengewicht, Zusatzgewicht über die Weste.", "Brust zur Stange, unten ganz strecken, nicht schwingen."]),
     # horizontaler Zug
     u("kabelrudern-sitzend", "Rudern am Kabel, sitzend", "horizontaler-zug", "ruecken", ["bizeps", "hintere-schulter"], ["kabelzug"], [8, 12],
       ["Rücken gerade, Brust raus.", "Griff zum Bauchnabel ziehen, Schulterblätter zusammen."]),
@@ -100,14 +105,16 @@ uebungen = [
       ["Schulterblätter an der Bank, Kinn zur Brust.", "Oben Gesäß anspannen, kein Hohlkreuz."]),
     # Core
     u("plank", "Unterarmstütz", "core", "core", [], ["matte"], [30, 60],
-      ["Körper eine Linie, Bauch und Gesäß anspannen.", "Wiederholungen = Sekunden."], atmung="Ruhig weiteratmen."),
+      ["Körper eine Linie, Bauch und Gesäß anspannen.", "Wiederholungen = Sekunden."], atmung="Ruhig weiteratmen.",
+      progression="zeit", zeit_schritt_s=5),
     u("pallof-press", "Pallof Press am Kabel", "core", "core", [], ["kabelzug"], [10, 12],
       ["Seitlich zum Kabel, Griff vor der Brust nach vorne drücken.", "Nicht zum Kabel verdrehen lassen."]),
     u("kabel-crunch", "Kabel-Crunch, kniend", "core", "core", [], ["kabelzug"], [10, 15],
       ["Seil am Kopf, Oberkörper einrollen statt aus der Hüfte ziehen."]),
     # Cardio (Ergaenzung, kein Slot im Krafttraining)
     u("rudern-intervalle", "Rudern, Intervalle", "cardio", "ausdauer", [], ["ruderergometer"], [20, 20],
-      ["z. B. 1 Min kräftig, 1 Min locker; Fortschritt über Watt oder 500-m-Zeit.", "Wiederholungen = Minuten gesamt."], atmung="Gleichmäßig atmen."),
+      ["z. B. 1 Min kräftig, 1 Min locker; Fortschritt über Watt oder 500-m-Zeit.", "Wiederholungen = Minuten gesamt."], atmung="Gleichmäßig atmen.",
+      progression="keine"),
 ]
 
 # ---------------- Einheiten (Vorlagen aus Slots) + Wochenpläne 2x–7x ----------------
@@ -121,8 +128,8 @@ STRECK = ["beinstrecker", "ausfallschritte-kh"]
 HUEFT_A = ["rdl-kh", "hip-thrust-lh"]
 HUEFT_B = ["hip-thrust-lh", "rdl-kh"]
 BEUGER = ["beinbeuger-maschine", "rdl-kh"]
-VZUG_A = ["latzug-breit", "klimmzug-assistiert", "latzug-eng"]
-VZUG_B = ["klimmzug-assistiert", "latzug-eng", "latzug-breit"]
+VZUG_A = ["latzug-breit", "klimmzug-assistiert", "latzug-eng", "klimmzug-weste"]
+VZUG_B = ["klimmzug-assistiert", "latzug-eng", "latzug-breit", "klimmzug-weste"]
 HZUG_A = ["kabelrudern-sitzend", "kh-rudern-einarmig"]
 HZUG_B = ["kh-rudern-einarmig", "kabelrudern-sitzend"]
 HINTEN = ["face-pulls", "reverse-flys-kh", "kh-rudern-einarmig"]

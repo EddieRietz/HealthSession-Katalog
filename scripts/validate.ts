@@ -145,6 +145,14 @@ for (const u of U) {
   for (const ge of u.geraete ?? []) if (!geraetIds.has(ge)) err(`${u.id}: Gerät ${ge} existiert nicht`);
   if (!u.hinweise?.length) err(`${u.id}: keine Ausführungshinweise`);
   if (!(Array.isArray(u.wdh) && u.wdh.length === 2 && u.wdh[0] <= u.wdh[1])) err(`${u.id}: Wiederholungsbereich ungültig`);
+  if (u.progression !== undefined && !["assistenz", "zeit", "keine"].includes(u.progression)) err(`${u.id}: unbekannte progression "${u.progression}"`);
+  if (u.progression === "zeit" && !(u.zeit_schritt_s > 0)) err(`${u.id}: zeit_schritt_s muss größer als 0 sein`);
+  if (u.danach !== undefined && u.progression !== "assistenz") err(`${u.id}: danach nur bei progression "assistenz"`);
+}
+for (const u of U) if (u.danach !== undefined) {
+  const d = U_MAP.get(u.danach);
+  if (!d) err(`${u.id}: danach ${u.danach} existiert nicht`);
+  else if (d.muster !== u.muster) err(`${u.id}: danach ${u.danach} hat ein anderes Muster`);
 }
 const einheitIds = new Set(E.einheiten.map((x: any) => x.id));
 for (const e of E.einheiten) {

@@ -65,6 +65,31 @@
         "Mehr Gegengewicht = leichter.",
         "Brust zur Stange, unten ganz strecken."
       ],
+      "atmung": "Bei Anstrengung ausatmen.",
+      "progression": "assistenz",
+      "danach": "klimmzug-weste"
+    },
+    {
+      "id": "klimmzug-weste",
+      "name": "Klimmzug mit Gewichtsweste",
+      "muster": "vertikaler-zug",
+      "muskel_primaer": "ruecken",
+      "muskel_sekundaer": [
+        "bizeps",
+        "core"
+      ],
+      "geraete": [
+        "klimmzug-assistiert",
+        "gewichtsweste"
+      ],
+      "wdh": [
+        6,
+        10
+      ],
+      "hinweise": [
+        "Ohne Gegengewicht, Zusatzgewicht über die Weste.",
+        "Brust zur Stange, unten ganz strecken, nicht schwingen."
+      ],
       "atmung": "Bei Anstrengung ausatmen."
     },
     {
@@ -639,7 +664,9 @@
         "Körper eine Linie, Bauch und Gesäß anspannen.",
         "Wiederholungen = Sekunden."
       ],
-      "atmung": "Ruhig weiteratmen."
+      "atmung": "Ruhig weiteratmen.",
+      "progression": "zeit",
+      "zeit_schritt_s": 5
     },
     {
       "id": "pallof-press",
@@ -695,7 +722,8 @@
         "z. B. 1 Min kräftig, 1 Min locker; Fortschritt über Watt oder 500-m-Zeit.",
         "Wiederholungen = Minuten gesamt."
       ],
-      "atmung": "Gleichmäßig atmen."
+      "atmung": "Gleichmäßig atmen.",
+      "progression": "keine"
     }
   ]
 }
