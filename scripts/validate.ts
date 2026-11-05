@@ -44,6 +44,7 @@ const P = new Map<string, Record<string, string>>();
 const KATEGORIEN = new Set(["Protein", "Huelsenfrucht", "Gemuese", "Obst", "Getreide", "Brot", "Fett", "Nuesse", "Getraenk", "Wuerze", "Ballaststoff", "Supplement"]);
 const AMPEL = new Set(["gruen", "bedingt", "rot", "info", "pruefen"]);
 const NUMERIC = ["kcal", "kj", "fett_g", "ges_fett_g", "mufa_g", "pufa_g", "kh_g", "zucker_g", "ballaststoffe_g", "protein_g", "salz_g", "dichte_g_ml", "stueck_g", "portion_menge", "packung_menge"];
+const istZahlenspalte = (k: string) => NUMERIC.includes(k) || k === "basis" || /_(g|mg|ug)$/.test(k);
 
 for (const p of produkte) {
   if (!/^[a-z0-9-]+$/.test(p.id)) err(`Produkt-ID ungültig: "${p.id}"`);
@@ -51,7 +52,15 @@ for (const p of produkte) {
   P.set(p.id, p);
   if (!KATEGORIEN.has(p.kategorie)) err(`${p.id}: unbekannte Kategorie "${p.kategorie}"`);
   if (!AMPEL.has(p.ampel)) err(`${p.id}: unbekannte Ampel "${p.ampel}"`);
-  for (const k of NUMERIC) if (p[k] !== "" && Number.isNaN(Number(p[k]))) err(`${p.id}: ${k} ist keine Zahl ("${p[k]}")`);
+  for (const k of Object.keys(p).filter(istZahlenspalte)) {
+    if (p[k] === "") continue;
+    const x = Number(p[k]);
+    if (!Number.isFinite(x)) err(`${p.id}: ${k} ist keine Zahl ("${p[k]}")`);
+    else if (x < 0) err(`${p.id}: ${k} ist negativ`);
+  }
+  // Teiler in Skalierung und Küchenmaßen: 0 ergäbe NaN in der App.
+  if (!(Number(p.basis || 100) > 0)) err(`${p.id}: basis muss größer als 0 sein`);
+  for (const k of ["dichte_g_ml", "stueck_g"]) if (p[k] !== "" && !(Number(p[k]) > 0)) err(`${p.id}: ${k} muss größer als 0 sein`);
   if (!p.quelle) err(`${p.id}: Quelle fehlt`);
   if (p.basis_einheit === "g" || p.basis_einheit === "ml") {
     for (const k of ["kcal", "fett_g", "kh_g", "protein_g", "salz_g"]) if (p[k] === "") err(`${p.id}: Pflichtwert ${k} fehlt`);
@@ -241,6 +250,12 @@ for (const g of BG.gruppen) for (const b of g.begriffe) {
 }
 
 const summary = { produkte: produkte.length, gerichte: G.gerichte.length, geraete: GE.length, uebungen: U.length, einheiten: E.einheiten.length, begriffe: begriffIds.size };
+// Versionen werden als Text verglichen; ein Tippfehler würde jeden späteren Katalog verdrängen.
+const morgen = new Date(Date.now() + 86_400_000).toISOString().slice(0, 10);
+for (const f of ["gerichte.json", "geraete.json", "uebungen.json", "einheiten.json", "begriffe.json"]) {
+  const v = load(f).version;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(v) || v > morgen) err(`${f}: Version "${v}" ist kein Datum JJJJ-MM-TT bis morgen`);
+}
 console.log(`Katalog ${G.version}:`, summary);
 for (const w of warnings) console.log("WARN ", w);
 for (const e of errors) console.log("FEHLER", e);
